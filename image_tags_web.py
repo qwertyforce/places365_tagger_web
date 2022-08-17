@@ -16,7 +16,7 @@ app = FastAPI()
 async def read_root():
     return {"Hello": "World"}
 
-@app.post("/get_tags")
+@app.post("/get_image_tags")
 async def get_tags_handler(image: bytes = File(...)):
     try:
         return {"tags":tag(image)}
