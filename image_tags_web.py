@@ -19,6 +19,6 @@ async def read_root():
 @app.post("/get_image_tags")
 async def get_tags_handler(image: bytes = File(...)):
     try:
-        return {"tags":tag(image)}
+        return tag(image)
     except:
         raise HTTPException(status_code=500, detail="Can't get image tags")
