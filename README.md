@@ -6,5 +6,5 @@ Supported operations: get_tags
 You should install torch yourself https://pytorch.org/get-started/locally/.
 
 
-```generate_tags.py ./path_to_img_folder``` -> generates features, places them in id_tags.txt  
+```generate_tags.py ./path_to_img_folder``` -> generates tags, places them in id_tags.txt  
 ```image_tags_web.py``` -> web microservice   
